@@ -13,17 +13,17 @@ export default class Player1 extends GameItem{
         let name = localStorage.getItem("player1Name")
         let xPos = GameItem.randomNumber(0, canvas.width - 50);
         let yPos = GameItem.randomNumber(70, canvas.height - 100);
-        let image = GameItem.loadNewImage('/assets/images/steveFront.png'); //S
+        let image = GameItem.loadNewImage('../assets/images/steveFront.png'); //S
         super(name, xPos,yPos,image);
 
         this.keyBoardListener = new KeyboardListener();
         
-        this.a = GameItem.loadNewImage('/assets/images/steveLeft.png'); //A
-        this.d = GameItem.loadNewImage('/assets/images/steveRight.png'); // D
-        this.w = GameItem.loadNewImage('/assets/images/steveBack.png');
-        this.s = GameItem.loadNewImage('/assets/images/steveFront.png');
+        this.a = GameItem.loadNewImage('../assets/images/steveLeft.png'); //A
+        this.d = GameItem.loadNewImage('../assets/images/steveRight.png'); // D
+        this.w = GameItem.loadNewImage('../assets/images/steveBack.png');
+        this.s = GameItem.loadNewImage('../assets/images/steveFront.png');
 
-        this.stepSound = GameItem.loadNewAudio("/assets/sound/grass2.mp3");
+        this.stepSound = GameItem.loadNewAudio("../assets/sound/grass2.mp3");
         this.canMove = true;
     }
 

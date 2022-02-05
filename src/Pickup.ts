@@ -6,7 +6,7 @@ export default class Pickup extends GameItem{
         let name = "pointPickup"
         let xPos = GameItem.randomNumber(0, canvas.width - 50);
         let yPos = GameItem.randomNumber(70, canvas.height - 100);
-        let image = GameItem.loadNewImage('/assets/images/goldApple.png'); 
+        let image = GameItem.loadNewImage('../assets/images/goldApple.png'); 
         super(name, xPos,yPos,image);
         
         this.point = 1 ;

@@ -12,7 +12,7 @@ submitBtn.addEventListener("click", function(event) {
     // check if entered text is not empty
     if(enteredPlayer1Name) {
         localStorage.setItem('player1Name', enteredPlayer1Name)
-        document.location.href = '/game.html';
+        document.location.href = '../game.html';
     } else {
         alert("Please enter your desired player name")
     }
@@ -23,7 +23,7 @@ submitBtn.addEventListener("click", function(event) {
     // check if entered text is not empty
     if(enteredPlayer2Name) {
         localStorage.setItem('player2Name', enteredPlayer2Name)
-        document.location.href = '/game.html';
+        document.location.href = '../game.html';
     } else {
         alert("Please enter your desired player 2 name")
     }

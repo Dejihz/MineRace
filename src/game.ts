@@ -47,7 +47,7 @@ export default class Game {
 
     this.winner = undefined;
 
-    this.pickupSound = GameItem.loadNewAudio("/assets/sound/pickup.mp3");
+    this.pickupSound = GameItem.loadNewAudio("../assets/sound/pickup.mp3");
 
   }
 

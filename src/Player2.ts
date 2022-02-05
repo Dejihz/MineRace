@@ -1,6 +1,5 @@
 import GameItem from "./GameItem.js";
 import KeyboardListener from "./KeyboardListener.js";
-import Player1 from "./Player1.js";
 
 export default class Player2 extends GameItem{
     private keyBoardListener: KeyboardListener;
@@ -14,17 +13,17 @@ export default class Player2 extends GameItem{
         let name = localStorage.getItem("player2Name")
         let xPos = GameItem.randomNumber(0, canvas.width - 50);
         let yPos = GameItem.randomNumber(70, canvas.height - 100);
-        let image = GameItem.loadNewImage('/assets/images/alexFront.png'); //S
+        let image = GameItem.loadNewImage('../assets/images/alexFront.png'); //S
 
         super(name, xPos,yPos,image);
         this.keyBoardListener = new KeyboardListener();
         
-        this.left = GameItem.loadNewImage('/assets/images/alexLeft.png'); //A
-        this.right = GameItem.loadNewImage('/assets/images/alexRight.png'); // D
-        this.up = GameItem.loadNewImage('/assets/images/alexBack.png');
-        this.down = GameItem.loadNewImage('/assets/images/alexFront.png');
+        this.left = GameItem.loadNewImage('../assets/images/alexLeft.png'); //A
+        this.right = GameItem.loadNewImage('../assets/images/alexRight.png'); // D
+        this.up = GameItem.loadNewImage('../assets/images/alexBack.png');
+        this.down = GameItem.loadNewImage('../assets/images/alexFront.png');
 
-        this.stepSound = GameItem.loadNewAudio("/assets/sound/grass3.mp3");
+        this.stepSound = GameItem.loadNewAudio("../assets/sound/grass3.mp3");
         this.canMove = true;
     }
 
