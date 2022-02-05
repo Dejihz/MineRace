@@ -1,13 +1,13 @@
 {
-  "name": "crazyquiz",
+  "name": "minerace",
   "version": "1.0.0",
   "description": "Object oriented game",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Meta-HZ/CrazyQuiz.git"
+    "url": "git+ https://dejihz.github.io/MineRace/"
   },
-  "author": "Daan van Hekken - Owen Selles - Kevin - Deji",
+  "author": " Deji",
   "license": "MIT",
   "private": true,
   "scripts": {
